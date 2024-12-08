@@ -243,7 +243,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 5
   m_LinearDamping: 1
   m_AngularDamping: 1
   m_GravityScale: 1
@@ -270,13 +270,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e5c640e12c3424891ce3fde211fe91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustPower: 20
-  torquePower: 1
+  thrustPower: 50
+  torquePower: 2
   maxLandingSpeed: 10
   speedCounter: {fileID: 0}
   maxSpeedCounter: {fileID: 0}
   timer: {fileID: 0}
+  rotationThreshold: 90
   completionTime: 3
+  sceneName: 
+  gameOver: 
 --- !u!114 &3955838369012082284
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -268,63 +268,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89715911}
   m_CullTransparentMesh: 1
---- !u!1001 &211706933
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -89.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9439868
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.32998344
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5014408318336600508, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 38.536
-      objectReference: {fileID: 0}
-    - target: {fileID: 7086944460331032394, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
-      propertyPath: m_Name
-      value: groundRock (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 567fb546189913b46b310bf5e97bae7d, type: 3}
 --- !u!1001 &265856590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -941,11 +884,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3757199086532327602, guid: 51bbdc0c105c1004c89019a924cea09e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.75
+      value: 7.58
       objectReference: {fileID: 0}
     - target: {fileID: 3757199086532327602, guid: 51bbdc0c105c1004c89019a924cea09e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -58.98
+      value: -61.15
       objectReference: {fileID: 0}
     - target: {fileID: 3757199086532327602, guid: 51bbdc0c105c1004c89019a924cea09e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1991,7 +1934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2108,6 +2051,14 @@ PrefabInstance:
       value: victory
       objectReference: {fileID: 0}
     - target: {fileID: 2472582292954117253, guid: 50a4b998c789cad458383e8a9c7f6c84, type: 3}
+      propertyPath: thrustPower
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472582292954117253, guid: 50a4b998c789cad458383e8a9c7f6c84, type: 3}
+      propertyPath: torquePower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2472582292954117253, guid: 50a4b998c789cad458383e8a9c7f6c84, type: 3}
       propertyPath: speedCounter
       value: 
       objectReference: {fileID: 1386707378}
@@ -2215,7 +2166,6 @@ SceneRoots:
   - {fileID: 1612872245}
   - {fileID: 351817312}
   - {fileID: 1069151403}
-  - {fileID: 211706933}
   - {fileID: 800593338}
   - {fileID: 883780900}
   - {fileID: 1966654856}
