@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      capsule-hi-res-grey_0: 4637504275414619846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

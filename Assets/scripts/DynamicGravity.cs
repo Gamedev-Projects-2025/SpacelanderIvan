@@ -3,9 +3,15 @@ using UnityEngine;
 public class DynamicGravity : MonoBehaviour
 {
     [Header("Gravity Settings")]
-    public Rigidbody2D playerRigidbody; // Reference to the player's Rigidbody2D
-    public GameObject ground;           // Reference to the ground GameObject
-    public float maxHeight = 10f;       // The height at which gravity is zero
+
+    [SerializeField]  private Rigidbody2D playerRigidbody; // Reference to the player's Rigidbody2D
+    [SerializeField]  private GameObject ground, gravityBoundry;           // Reference to the ground GameObject
+    private float maxHeight;       // The height at which gravity is zero
+
+    private void Start()
+    {
+        maxHeight = gravityBoundry.transform.position.y - ground.transform.position.y; 
+    }
 
     void FixedUpdate()
     {
@@ -21,9 +27,7 @@ public class DynamicGravity : MonoBehaviour
         }
 
         // Get the current height of the player relative to the ground
-        float groundY = ground.transform.position.y;
-        float playerY = transform.position.y;
-        float distanceFromGround = Mathf.Clamp(playerY - groundY, 0, maxHeight);
+        float distanceFromGround = Mathf.Clamp(transform.position.y - ground.transform.position.y, 0, maxHeight);
 
         // Calculate the gravity scale based on the height
         float gravityScale = Mathf.Lerp(1f, 0f, distanceFromGround / maxHeight);

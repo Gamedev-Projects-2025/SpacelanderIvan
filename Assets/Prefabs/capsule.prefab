@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3955838369012082284}
   - component: {fileID: 333742705205848693}
   - component: {fileID: 5143350502246720641}
+  - component: {fileID: 1533974162243195543}
   m_Layer: 0
   m_Name: capsule
   m_TagString: Untagged
@@ -274,6 +275,8 @@ MonoBehaviour:
   maxLandingSpeed: 10
   speedCounter: {fileID: 0}
   maxSpeedCounter: {fileID: 0}
+  timer: {fileID: 0}
+  completionTime: 3
 --- !u!114 &3955838369012082284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRigidbody: {fileID: 3385356003732710282}
   ground: {fileID: 0}
-  maxHeight: 69
+  gravityBoundry: {fileID: 0}
 --- !u!114 &333742705205848693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +334,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c841a0859327d3c43b2cfa6a9d418345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1533974162243195543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5139939258462045416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5c594b80a84474382f895f4f3c274c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1 &8079285107369677067
 GameObject:
   m_ObjectHideFlags: 0
